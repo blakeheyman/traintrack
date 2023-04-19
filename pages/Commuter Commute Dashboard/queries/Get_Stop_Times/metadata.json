@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GET_all_stops",
+    "name": "Get_Stop_Times",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/a/stops"
+        "url": "web:4000/c/stops/{{Stop_Select.selectedOptionValue}}/times"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Admin Transit Overview",
+    "pageId": "Commuter Commute Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,17 +37,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Stop_Select.selectedOptionValue"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Admin Transit Overview_GET_all_stops",
+  "id": "Commuter Commute Dashboard_Get_Stop_Times",
   "deleted": false,
-  "gitSyncId": "64386ca1dbe56122513beadf_643f845f90e4db23a5a0536b"
+  "gitSyncId": "6438761f4672673edc0957c0_6440109aeb55bd490ba1e44c"
 }

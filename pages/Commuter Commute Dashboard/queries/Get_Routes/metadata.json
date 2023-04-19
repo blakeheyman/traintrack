@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GET_all_stops",
+    "name": "Get_Routes",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/a/stops"
+        "url": "web:4000/c/routes"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Admin Transit Overview",
+    "pageId": "Commuter Commute Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Admin Transit Overview_GET_all_stops",
+  "id": "Commuter Commute Dashboard_Get_Routes",
   "deleted": false,
-  "gitSyncId": "64386ca1dbe56122513beadf_643f845f90e4db23a5a0536b"
+  "gitSyncId": "6438761f4672673edc0957c0_64400c44eb55bd490ba1e444"
 }
