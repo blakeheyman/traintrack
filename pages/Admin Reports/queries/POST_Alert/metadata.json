@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{alert_form.data}}",
+      "body": "{\n\t\"start_date\": {{moment(new Date(alert_form.data.start_date)).format('YYYY-MM-DD hh:mm:ss')}},\n\t\"end_date\": {{moment(new Date(alert_form.data.end_date)).format('YYYY-MM-DD hh:mm:ss')}},\n\t\"severity\": {{alert_form.data.severity}},\n\t\"message\": {{alert_form.data.message}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -45,18 +45,21 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "datasourceUrl"
       },
       {
-        "key": "datasourceUrl"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "alert_form.data",
-      "alert_form.data.stop_id"
+      "alert_form.data.message",
+      "alert_form.data.severity",
+      "alert_form.data.stop_id",
+      "moment(new Date(alert_form.data.end_date)).format('YYYY-MM-DD hh:mm:ss')",
+      "moment(new Date(alert_form.data.start_date)).format('YYYY-MM-DD hh:mm:ss')"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

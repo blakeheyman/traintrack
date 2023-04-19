@@ -1,1 +1,6 @@
-{{alert_form.data}}
+{
+	"start_date": {{moment(new Date(alert_form.data.start_date)).format('YYYY-MM-DD hh:mm:ss')}},
+	"end_date": {{moment(new Date(alert_form.data.end_date)).format('YYYY-MM-DD hh:mm:ss')}},
+	"severity": {{alert_form.data.severity}},
+	"message": {{alert_form.data.message}}
+}
