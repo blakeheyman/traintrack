@@ -1,0 +1,6 @@
+{
+	"email": {{register_form.data.email_register}},
+ 	"password": {{register_form.data.password_register}},
+ 	"first_name": {{register_form.data.first_name}},
+  "last_name": {{register_form.data.last_name}}
+}

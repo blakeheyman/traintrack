@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GET_Reports",
+    "name": "commuters_fav_stops",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/a/reports"
+        "url": "web:4000/c/{{appsmith.store.email}}/favorites"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Admin Reports",
+    "pageId": "Commuter Profile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,17 +37,26 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "datasource.datasourceConfiguration.url"
+      },
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.email"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Admin Reports_GET_Reports",
+  "id": "Commuter Profile_commuters_fav_stops",
   "deleted": false,
-  "gitSyncId": "643874124b512c39bdf35d59_643f4144adc548339c77758f"
+  "gitSyncId": "6438762b362fc03516b332c2_64401d067aa4b163cd571746"
 }
