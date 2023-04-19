@@ -1,0 +1,5 @@
+{
+    "open": {{Number(Open_edit.isSwitchedOn)}},
+    "sequence_num": {{seq_num_edit.text}},
+    "time_to_here": {{Timefromprev_edit.text}}
+}

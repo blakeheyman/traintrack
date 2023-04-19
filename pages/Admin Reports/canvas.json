@@ -305,15 +305,15 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 1,
-              "bottomRow": 47,
+              "topRow": 3,
+              "bottomRow": 49,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 18.15625,
-              "leftColumn": 35,
+              "leftColumn": 34,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -806,7 +806,7 @@
               "key": "hyin912436",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 61,
+              "rightColumn": 60,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "upxnwe6xcj",
               "minWidth": 450,
@@ -815,10 +815,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 1,
+              "originalTopRow": 3,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 47,
+              "originalBottomRow": 49,
               "minDynamicHeight": 10
             }
           ]
