@@ -1,0 +1,6 @@
+{
+  "name": {{create_location_name.text}},
+  "latitude": {{create_location_latitude.text}},
+  "longitude": {{create_location_longitude.text}},
+  "handicap_accessible": {{create_location_handicap.isSwitchedOn}}
+}
