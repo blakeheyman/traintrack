@@ -1093,7 +1093,7 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "widgetName": "Stop_Edit_HeaderCopy",
+                              "widgetName": "create_stop_title",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                               "searchTags": [
@@ -1147,7 +1147,7 @@
                             {
                               "resetFormOnClick": true,
                               "boxShadow": "none",
-                              "widgetName": "Edit_stop_buttonCopy",
+                              "widgetName": "create_stop_submit",
                               "onClick": "{{PUT_stop.run(() => GET_all_stops.run(), () => showAlert('Stop info unable to be changed','error'))}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
@@ -1252,7 +1252,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Stop_id_editCopy",
+                              "widgetName": "create_stop_id",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -1314,7 +1314,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Routeid_editCopy",
+                              "widgetName": "create_stop_route_id",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -1378,7 +1378,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "loc_edit_staticCopy",
+                              "widgetName": "create_stop_location",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -1442,7 +1442,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Timefromprev_editCopy",
+                              "widgetName": "create_stop_min_prev",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -1506,7 +1506,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "seq_num_editCopy",
+                              "widgetName": "create_stop_sequence_num",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -1570,7 +1570,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Open_editCopy",
+                              "widgetName": "create_stop_open",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "defaultSwitchState"
