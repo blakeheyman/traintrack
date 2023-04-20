@@ -717,9 +717,6 @@
                           "key": "boxShadow"
                         },
                         {
-                          "key": "tableData"
-                        },
-                        {
                           "key": "primaryColumns.id.computedValue"
                         },
                         {
@@ -745,6 +742,9 @@
                         },
                         {
                           "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "needsHeightForContent": true,

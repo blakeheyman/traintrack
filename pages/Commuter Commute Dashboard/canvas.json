@@ -107,7 +107,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{Get_Routes.data}}",
+                      "options": "{{Get_Routes.data.map(r => {\n\treturn {\n\t\t\"label\": r.name,\n\t\t\"value\": r.id\n\t}\n})}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "p983fdwxxb",
@@ -150,7 +150,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 9.9208984375,
                       "dynamicTriggerPathList": [
@@ -171,7 +171,7 @@
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{Get_Route_Stops.data}}",
+                      "options": "{{Get_Route_Stops.data.map(s => {\n\treturn {\n\t\t\"label\": s.location_name,\n\t\t\"value\": s.id\n\t}\n})}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "p983fdwxxb",
@@ -625,12 +625,24 @@
               "originalTopRow": 25,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 96,
+              "originalBottomRow": 95,
               "minDynamicHeight": 10
             }
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "Commuter Commute Dashboard_Get_Stop_Times",
+              "name": "Get_Stop_Times",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Stop_Select.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "Commuter Commute Dashboard_Get_Route_Stops",
@@ -648,16 +660,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Commuter Commute Dashboard_Get_Stop_Times",
-              "name": "Get_Stop_Times",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Stop_Select.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
