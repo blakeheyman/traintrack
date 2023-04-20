@@ -80,7 +80,7 @@
                         "group"
                       ],
                       "topRow": 0,
-                      "bottomRow": 44,
+                      "bottomRow": 50,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -101,7 +101,7 @@
                           "widgetName": "Stop_Info",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 440,
+                          "bottomRow": 500,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -175,8 +175,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 38,
-                              "bottomRow": 42,
+                              "topRow": 44,
+                              "bottomRow": 48,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -209,8 +209,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "hug",
+                              "originalTopRow": 38,
                               "disabledWhenInvalid": true,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "originalBottomRow": 42,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
@@ -226,8 +228,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 38,
-                              "bottomRow": 42,
+                              "topRow": 44,
+                              "bottomRow": 48,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -260,8 +262,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "hug",
+                              "originalTopRow": 38,
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "originalBottomRow": 42,
                               "buttonVariant": "SECONDARY",
                               "placement": "CENTER"
                             },
@@ -338,8 +342,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 30,
-                              "bottomRow": 37,
+                              "topRow": 36,
+                              "bottomRow": 43,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -383,8 +387,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "fill",
+                              "originalTopRow": 30,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 37,
                               "iconAlign": "left",
                               "defaultText": "{{all_stops.selectedRow.route_id}}",
                               "minDynamicHeight": 4
@@ -400,8 +406,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 14,
-                              "bottomRow": 21,
+                              "topRow": 20,
+                              "bottomRow": 27,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -445,8 +451,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "fill",
+                              "originalTopRow": 14,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 21,
                               "iconAlign": "left",
                               "defaultText": "{{all_stops.selectedRow.location_name}}",
                               "minDynamicHeight": 4
@@ -462,8 +470,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 22,
-                              "bottomRow": 29,
+                              "topRow": 28,
+                              "bottomRow": 35,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -507,8 +515,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "fill",
+                              "originalTopRow": 22,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 29,
                               "iconAlign": "left",
                               "defaultText": "{{all_stops.selectedRow.time_to_here}}",
                               "minDynamicHeight": 4
@@ -524,8 +534,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 30,
-                              "bottomRow": 37,
+                              "topRow": 36,
+                              "bottomRow": 43,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -569,8 +579,10 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "fill",
+                              "originalTopRow": 30,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 37,
                               "iconAlign": "left",
                               "defaultText": "{{all_stops.selectedRow.sequence_num}}",
                               "minDynamicHeight": 4
@@ -589,7 +601,7 @@
                                 "boolean"
                               ],
                               "topRow": 9,
-                              "bottomRow": 13,
+                              "bottomRow": 19,
                               "parentRowSpace": 10,
                               "type": "SWITCH_WIDGET",
                               "alignWidget": "LEFT",
@@ -621,7 +633,9 @@
                               "parentId": "x8s8o93d3d",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "originalTopRow": 9,
                               "maxDynamicHeight": 9000,
+                              "originalBottomRow": 13,
                               "minDynamicHeight": 4
                             },
                             {
@@ -750,10 +764,10 @@
                           "key": "primaryColumns.sequence_num.computedValue"
                         },
                         {
-                          "key": "primaryColumns.time_to_here.computedValue"
+                          "key": "primaryColumns.open.computedValue"
                         },
                         {
-                          "key": "primaryColumns.open.computedValue"
+                          "key": "primaryColumns.time_to_next.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -791,7 +805,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681884290791,
+                      "columnUpdatedAt": 1681964978310,
                       "primaryColumnId": "id",
                       "defaultSelectedRowIndices": [
                         0
@@ -804,7 +818,7 @@
                         "open",
                         "route_id",
                         "sequence_num",
-                        "time_to_here"
+                        "time_to_next"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -955,17 +969,19 @@
                           "sticky": "",
                           "validation": {}
                         },
-                        "time_to_here": {
+                        "time_to_next": {
                           "allowCellWrapping": false,
                           "index": 5,
                           "width": 150,
-                          "originalId": "time_to_here",
-                          "id": "time_to_here",
-                          "alias": "time_to_here",
+                          "originalId": "time_to_next",
+                          "id": "time_to_next",
+                          "alias": "time_to_next",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -974,12 +990,13 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Time from Previous Stop",
+                          "label": "time_to_next",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{all_stops.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"time_to_here\"]))}}",
+                          "computedValue": "{{all_stops.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"time_to_next\"]))}}",
                           "sticky": "",
-                          "validation": {}
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "yuv70no7au",

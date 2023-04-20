@@ -613,7 +613,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "log_in",
-                      "onClick": "{{commuters_fav_stops.run()}}",
+                      "onClick": "{{commuters_fav_stops.run(() => showAlert('Logged in'), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [],
                       "displayName": "Button",
@@ -704,6 +704,7 @@
                       "topRow": 12,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
+                      "topRowBeforeCollapse": 12,
                       "inlineEditingSaveOption": "ROW_LEVEL",
                       "animateLoading": true,
                       "dynamicBindingPathList": [
@@ -753,6 +754,7 @@
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "bottomRowBeforeCollapse": 41,
                       "isVisibleFilters": true,
                       "isVisible": true,
                       "enableClientSideSearch": true,
@@ -1360,8 +1362,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
+                      "originalTopRow": 43,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "originalBottomRow": 47,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -1419,8 +1423,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
+                      "originalTopRow": 47,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "originalBottomRow": 51,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -1478,8 +1484,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
+                      "originalTopRow": 43,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "originalBottomRow": 47,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -1532,8 +1540,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
+                      "originalTopRow": 51,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 55,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
@@ -1585,8 +1595,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
+                      "originalTopRow": 51,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 55,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
@@ -1623,7 +1635,9 @@
                       "parentId": "ecokrfff8p",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "responsiveBehavior": "fill"
+                      "responsiveBehavior": "fill",
+                      "originalTopRow": 43,
+                      "originalBottomRow": 54
                     }
                   ],
                   "key": "las21pcmwu",
@@ -1664,20 +1678,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Commuter Profile_commuters_fav_stops",
-              "name": "commuters_fav_stops",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "email_login.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Commuter Profile",
