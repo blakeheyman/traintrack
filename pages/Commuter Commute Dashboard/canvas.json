@@ -86,7 +86,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( ``))(Route_Select.options, Route_Select.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 7.076171875,
                       "dynamicTriggerPathList": [
@@ -104,6 +104,9 @@
                         },
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Top",
@@ -632,28 +635,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "Commuter Commute Dashboard_Get_Stop_Times",
-              "name": "Get_Stop_Times",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Stop_Select.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Commuter Commute Dashboard_Get_Route_Stops",
-              "name": "Get_Route_Stops",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Route_Select.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Commuter Commute Dashboard_Get_Routes",
               "name": "Get_Routes",
