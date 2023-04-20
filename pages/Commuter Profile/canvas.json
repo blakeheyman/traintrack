@@ -613,7 +613,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "log_in",
-                      "onClick": "{{commuters_fav_stops.run(() => showAlert('Logged in'), () => {})}}",
+                      "onClick": "{{commuters_fav_stops.run(() => showAlert('Logged in'), () => showAlert('Failed to log in.'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [],
                       "displayName": "Button",
