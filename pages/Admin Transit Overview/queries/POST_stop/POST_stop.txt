@@ -1,0 +1,7 @@
+{
+    "place_after_stop_id" : {{create_stop_place_after_id.text}}, 
+    "location_name": {{create_stop_location.selectedOptionValue}},
+    "open": {{Number(create_stop_open.isSwitchedOn)}},
+    "route_id": {{create_stop_route_id.text}},
+    "time_to_here": {{create_stop_min_prev.text}}
+}

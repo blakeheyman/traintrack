@@ -1,0 +1,6 @@
+{
+  "type": {{create_vehicle_type.text}},
+  "daily_start_time": {{create_vehicle_start_time.text}},
+  "route_id": {{create_vehicle_route_id.text}},
+  "commission_date": {{create_vehicle_comdate.formattedDate}}
+}
