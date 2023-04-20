@@ -1,0 +1,4 @@
+{
+	"daily_start_time" : {{update_vehicle_start_time.text}},
+	"route_id" : {{update_vehicle_route_id.text}}
+}

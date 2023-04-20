@@ -1,0 +1,4 @@
+{
+  "name" : {{edit_route_name.text}},
+  "time_period" : {{Edit_route_time_period.text}}
+}
