@@ -1,4 +1,0 @@
-{
-	"nickname": {{favorites.updatedRow.nickname}}
-	"stop_id"
-}

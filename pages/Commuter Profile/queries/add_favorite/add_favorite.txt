@@ -1,0 +1,4 @@
+{
+	"nickname": {{nickname.text}},
+	"stop_id": {{stop_id_add.text}}
+}

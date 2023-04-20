@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "update_nickname",
+    "name": "add_favorite",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/{{email_login.text}}/favorites/{{favorites.updatedRow.id}}"
+        "url": "web:4000/c/{{email_login.text}}/favorites"
       },
       "invalids": [],
       "messages": [],
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"nickname\": {{favorites.updatedRow.nickname}}\n}",
+      "body": "{\n\t\"nickname\": {{nickname.text}},\n\t\"stop_id\": {{stop_id_add.text}}\n}",
       "bodyFormData": [],
-      "httpMethod": "PUT",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -46,9 +46,6 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
-      },
-      {
-        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
@@ -56,15 +53,15 @@
     "messages": [],
     "jsonPathKeys": [
       "email_login.text",
-      "favorites.updatedRow.id",
-      "favorites.updatedRow.nickname"
+      "nickname.text",
+      "stop_id_add.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Commuter Profile_update_nickname",
+  "id": "Commuter Profile_add_favorite",
   "deleted": false,
-  "gitSyncId": "6438762b362fc03516b332c2_644020ac7aa4b163cd57174b"
+  "gitSyncId": "6438762b362fc03516b332c2_6440269e7aa4b163cd571752"
 }

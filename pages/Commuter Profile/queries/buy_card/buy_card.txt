@@ -1,0 +1,4 @@
+{
+	"balance": {{balance.value}},
+	"email": {{email_login.text}}
+}
